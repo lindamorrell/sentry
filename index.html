@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skillforge — 21 repositories, forged into 532 agent skills</title>
+    <meta name="description" content="A cinematic record of one batch install: 21 open-source agent repositories cloned, installed, verified against reality, and forged into a 532-skill library. Rendered from HTML by HyperFrames." />
+    <meta name="theme-color" content="#04060c" />
+    <meta property="og:title" content="Skillforge" />
+    <meta property="og:description" content="21 repositories → 532 agent skills, with a film rendered from HTML." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23060a14'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%235eead4' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='3.5' fill='%2360a5fa'/%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="assets/fonts.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"></span></div>
+    <div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+    <div class="preloader" id="preloader">
+      <div class="preloader__inner">
+        <svg class="preloader__mark" viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring r1" cx="60" cy="60" r="52" />
+          <circle class="ring r2" cx="60" cy="60" r="34" />
+          <circle class="ring r3" cx="60" cy="60" r="18" />
+          <circle class="core" cx="60" cy="60" r="5" />
+        </svg>
+        <div class="preloader__label mono">forging library</div>
+        <div class="preloader__bar"><span id="preCount">0</span>%</div>
+      </div>
+    </div>
+
+    <header class="nav">
+      <a class="nav__brand" href="#top" data-magnetic>
+        <span class="nav__dot"></span>
+        <span class="mono">skillforge</span>
+      </a>
+      <nav class="nav__links mono">
+        <a href="#film" data-magnetic>the film</a>
+        <a href="#pipeline" data-magnetic>pipeline</a>
+        <a href="#inventory" data-magnetic>inventory</a>
+        <a href="#repos" data-magnetic>repos</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero" id="hero">
+        <canvas class="hero__canvas" id="field" aria-hidden="true"></canvas>
+        <div class="hero__aura" aria-hidden="true"></div>
+        <div class="hero__inner">
+          <p class="eyebrow mono" data-reveal>21 repositories · one agent library · <span data-total-skills>532</span> skills</p>
+          <h1 class="hero__title" id="heroTitle" aria-label="Skillforge">
+            <span data-letter>S</span><span data-letter>K</span><span data-letter>I</span><span data-letter>L</span><span data-letter>L</span><span data-letter>F</span><span data-letter>O</span><span data-letter>R</span><span data-letter>G</span><span data-letter>E</span>
+          </h1>
+          <p class="hero__lede" data-reveal>
+            A batch of open-source agent tools, cloned without trust, installed against reality, and folded into one skill library —
+            documented here as design, and rendered as a film written in HTML.
+          </p>
+          <div class="hero__meta" data-reveal>
+            <div><b data-count="21">21</b><span class="mono">repositories</span></div>
+            <div><b data-count="14">14</b><span class="mono">clis verified</span></div>
+            <div><b data-count="532">532</b><span class="mono">skills installed</span></div>
+            <div><b data-count="7">7</b><span class="mono">not installed</span></div>
+          </div>
+        </div>
+        <div class="scrollcue mono" aria-hidden="true"><span>scroll</span><i></i></div>
+      </section>
+
+      <!-- MANIFESTO -->
+      <section class="manifesto" data-words>
+        <p>
+          Every repository here was made to be believed or discarded on evidence: a version string that actually prints,
+          a file that actually parses, a page that actually loads. Where the sandbox could not run something — a Windows-only
+          harness, a Swift toolkit, an Electron build — the page says so instead of pretending.
+        </p>
+      </section>
+
+      <!-- FILM -->
+      <section class="film" id="film">
+        <div class="film__sticky">
+          <div class="film__head">
+            <p class="eyebrow mono" data-reveal>the film · rendered from html</p>
+            <h2 data-reveal>Sixteen seconds of composition</h2>
+            <p class="film__sub" data-reveal>
+              The clip below is not stock footage. It is a HyperFrames composition: HTML, CSS and one seekable timeline,
+              rendered frame by frame into an MP4 — <span class="mono" data-video-spec>1920×1080 · 30 fps</span>.
+            </p>
+          </div>
+          <figure class="player" id="player" data-reveal>
+            <video id="video" poster="assets/poster.jpg" preload="auto" playsinline muted loop>
+              <source src="assets/skillforge.mp4" type="video/mp4" />
+            </video>
+            <div class="player__chrome">
+              <button class="player__btn" id="playBtn" type="button" aria-label="Play the film" data-magnetic>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" /></svg>
+              </button>
+              <div class="player__bar" id="playerBar" role="slider" aria-label="Film timeline" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" tabindex="0">
+                <span class="player__fill" id="playerFill"></span>
+              </div>
+              <span class="player__time mono" id="playerTime">0.0s / <span data-video-dur>16.0</span>s</span>
+              <span class="player__tag mono" id="playerMode">scroll to scrub</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- PIPELINE -->
+      <section class="pipeline" id="pipeline">
+        <div class="section__head">
+          <p class="eyebrow mono" data-reveal>pipeline</p>
+          <h2 data-reveal>How a link becomes a capability</h2>
+        </div>
+        <ol class="steps">
+          <li class="step" data-reveal>
+            <span class="step__num mono">01</span>
+            <h3>Recon</h3>
+            <p>Read the repo before running it: which tree actually holds the skills, what the installer expects, which
+              toolchains this machine even has. A missing compiler is a fact, not a failure.</p>
+            <span class="step__tag mono">read · classify · decide</span>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num mono">02</span>
+            <h3>Install &amp; verify</h3>
+            <p>Prefer the registry over a source build, then make the tool prove itself with a real command. Record its
+              actual output — a version string that errors means it is not installed.</p>
+            <span class="step__tag mono">npm · uv · pip · cargo-free</span>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num mono">03</span>
+            <h3>Forge skills</h3>
+            <p>Copy canonical skill trees into the agent library, repair the frontmatter agents need, collapse duplicate
+              names, then validate every file in one pass. Nothing is claimed that the disk cannot show.</p>
+            <span class="step__tag mono">copy · normalise · validate</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- INVENTORY -->
+      <section class="inventory" id="inventory">
+        <div class="section__head">
+          <p class="eyebrow mono" data-reveal>inventory</p>
+          <h2 data-reveal>What came out of the forge</h2>
+        </div>
+        <div class="stat-row" id="statRow"></div>
+        <div class="chart" id="chart" aria-label="Skills per category"></div>
+        <p class="chart__note mono" data-reveal>counts read from the live skill library, not typed by hand</p>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track" id="marqueeTrack"></div>
+        </div>
+      </section>
+
+      <!-- REPOS -->
+      <section class="repos" id="repos">
+        <div class="section__head">
+          <p class="eyebrow mono" data-reveal>the twenty-one</p>
+          <h2 data-reveal>Every repository, and what it became</h2>
+        </div>
+        <div class="filter mono" id="filter">
+          <button class="is-active" data-filter="all" type="button">all <span id="cAll"></span></button>
+          <button data-filter="installed" type="button">installed <span id="cInstalled"></span></button>
+          <button data-filter="blocked" type="button">not installed <span id="cBlocked"></span></button>
+        </div>
+        <div class="grid" id="repoGrid"></div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__mark" aria-hidden="true">
+          <span class="r1"></span><span class="r2"></span><span class="r3"></span><span class="core"></span>
+        </div>
+        <p class="footer__line">
+          Built by <span class="mono">Hermes Agent</span> · film rendered with <span class="mono">HyperFrames</span> ·
+          data dated <span class="mono" data-generated></span>
+        </p>
+        <p class="footer__fine mono">no trackers · no cdn · every byte served from this repository</p>
+      </footer>
+    </main>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
